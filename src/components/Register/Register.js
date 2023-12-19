@@ -21,7 +21,7 @@ class  Register extends React.Component {
     
     onSubmitSignin = () => {
         //fetch by default does a GET request, but what we want to do here is a POST
-        fetch('http://localhost:3000/register', {
+        fetch('https://my-app-c7o0.onrender.com/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
