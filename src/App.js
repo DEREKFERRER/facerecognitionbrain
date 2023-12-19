@@ -78,6 +78,7 @@ onButtonSubmit = () => {
         input: this.state.input
     })
   })
+    .then(response => response.json())
     .then(response => {
       if (response) {
         fetch('https://mybackend-uuhs.onrender.com/image', {
