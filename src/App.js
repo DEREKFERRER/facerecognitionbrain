@@ -69,7 +69,7 @@ displayFaceBox = (box) => {
 }
 onButtonSubmit = () => {
   this.setState({imageUrl: this.state.input});
-  fetch('https://my-app-c7o0.onrender.com/imageurl', {
+  fetch('https://my-app-h9hi.onrender.com/imageurl', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ onButtonSubmit = () => {
   })
     .then(response => {
       if (response) {
-        fetch('https://my-app-c7o0.onrender.com/image', {
+        fetch('https://my-app-h9hi.onrender.com/image', {
           method: 'PUT',
           headers: {
               'Content-Type': 'application/json'
