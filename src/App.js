@@ -115,7 +115,7 @@ onButtonSubmit = () => {
    const {isSignedIn, imageUrl, route, box } = this.state;
   return ( // you cant put a if statement or anything in return statement
     <div className="App">
- <ParticlesBg type="cobweb"  bg={true} />    
+ <ParticlesBg color="#ffffff" type="cobweb"  bg={true} />    
       <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
       {this.state.route === 'home' 
         ? <div>
