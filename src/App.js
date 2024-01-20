@@ -75,7 +75,7 @@ onButtonSubmit = () => {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        input: this.state.input
+        id: this.state.input
     })
   })
     .then(response => response.json())

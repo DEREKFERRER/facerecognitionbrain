@@ -30,13 +30,6 @@ class Signin extends React.Component {
         }) 
         .then(response => response.json())
         .then(user => {
-            /* if(!data.error){
-                console.log("Successful login")
-            } */
-          /*   if (data === 'success') {
-                this.props.onRouteChange('home');
-            } */
-            //new
             if(user.id){// does the user exist? Did we receive a user with a property of id?
                 this.props.loadUser(user);
                 this.props.onRouteChange('home');
@@ -56,7 +49,7 @@ class Signin extends React.Component {
                         <div className="mt3">
                         <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                         <input 
-                         className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                         className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 br3"
                          type="email" 
                          name="email-address"  
                          id="email-address"
@@ -66,7 +59,7 @@ class Signin extends React.Component {
                         <div className="mv3">
                         <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
                         <input 
-                        className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
+                        className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 br3" 
                         type="password" 
                         name="password"  
                         id="password"
@@ -75,7 +68,7 @@ class Signin extends React.Component {
                         </div>
                     </fieldset>
                     <div className="">
-                        <input onClick={this.onSubmitSignin} className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Sign in"/>
+                        <input onClick={this.onSubmitSignin} className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib br4" type="submit" value="Sign in"/>
                     </div>
                     <div className="lh-copy mt3">
                         <p onClick={() => onRouteChange('register') } className="f6 link dim black db pointer">Register</p>
